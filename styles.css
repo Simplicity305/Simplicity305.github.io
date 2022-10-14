@@ -1,0 +1,101 @@
+/* * {
+    border: 1px solid black;
+} */
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+	height: 80px;
+    display: block;
+    background-color: lightgoldenrodyellow;
+}
+
+header a img {
+    height: 40px;
+    position: relative;
+    top: 20px;
+}
+
+nav {
+    float: right;
+    position: relative;
+    top: 30px;
+}
+
+nav a {
+    padding: 0 10px;
+}
+
+body {
+    margin: 0;
+}
+
+/* Home Page */
+
+.content-wrapper {
+    margin: 60px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.left-container {
+    display: inline-block;
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button-home {
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: lavender;
+    align-content: center;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 140px;
+    font-size: large;
+    text-decoration: none;
+}
+
+.button-home:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.main-profile-pic {
+    display: flex;
+    flex-grow: 1;
+    /* align-content: center; */
+    padding: 20px;
+}
+
+
+.social-icons img {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 0 450px;
+    margin: 50px 50px;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    font-weight: 500;
+    background-color: antiquewhite;
+}
