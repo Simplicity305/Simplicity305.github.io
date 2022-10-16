@@ -1,20 +1,113 @@
-/* * {
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
     border: 1px solid black;
-} */
+}
+
 
 html {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header {
+    background-color: #8F6E5D;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+header a {
+    max-width: 20%;
+ 
+}
+
+img.logo {
     width: 100%;
-    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+}
+
+nav a {
+    color: #faf6f5;
+    text-decoration: none;
+    align-content: center;
+    padding: 5% auto;
+    margin: auto;
+}
+
+nav a {
+
+}
+
+body {
+    background-color: #faf6f5;
+    color: #35302e;
+    margin: 0;
+
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+footer {
+    color: #35302e;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+/* -------HOME------- */
+.section-wrapper-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+
+}
+
+.wrap .home {
+    display: flex;
+    align-content: center;
+}
+
+.text-main {
+    padding: 0 5%;
+}
+
+
+
+
+
+
+/*---------OG CODE FOR DESKTOP----------- */
+/* * {
+    border: 1px solid black;
+}
+
+/* ACROSS ALL PAGES */
+
+/* html {
     font-family: 'Arial', sans-serif;
 }
 
 header {
-	height: 80px;
+	background-color: rgb(236, 79, 27);
     display: block;
-    background-color: lightgoldenrodyellow;
-}
+    height: 10vh;
+    width: 100vw;
+} */
 
-header a img {
+/* change this when inputting logo */
+/* header a img {
     height: 40px;
     position: relative;
     top: 20px;
@@ -24,45 +117,77 @@ nav {
     float: right;
     position: relative;
     top: 30px;
+
 }
 
 nav a {
+    color: navajowhite;
     padding: 0 10px;
+    text-decoration: none;
 }
 
 body {
+    height: 100vh;
     margin: 0;
+    max-width: 100vw;
 }
 
-/* Home Page */
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* height: 10vh; */
+    /* width: 100vw;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    font-weight: 500;
+    background-color: rgb(236, 79, 27);
+}
 
-.content-wrapper {
-    margin: 60px;
+.social-icons img {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 0 450px;
+    margin: 50px 50px;
+} */ 
+
+
+/* ----------------HOME PAGE------------------ */
+
+/* .content-wrapper {
+    margin: auto;
     display: flex;
     flex-grow: 1;
 }
 
 .left-container {
-    display: inline-block;
-    display: flex;
-    flex-grow: 2;
-    flex-direction: column;
-    font-size: 2rem;
+    display: block;
+    /* display: flex;
+    flex-grow: 1; */
+    /* flex-direction: column; */
+    /* font-size: 2rem; */
+    /* padding: 10%;
+    width: 80%;
+} */
+
+/* .main-header {
+    text-align: center;
 }
 
-h1 {
-    text-align: center;
+.home-bio {
+
 }
 
 .button-home {
+    align-content: center;
+    background-color: lavender;
     border-radius: 5px;
     border: 1px solid black;
-    background-color: lavender;
-    align-content: center;
-    text-align: center;
-    padding: 0 20px;
-    margin: 0 140px;
     font-size: large;
+    margin: 0 140px;
+    padding: 0 20px;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -73,29 +198,75 @@ h1 {
 }
 
 .main-profile-pic {
-    display: flex;
-    flex-grow: 1;
-    /* align-content: center; */
-    padding: 20px;
-}
-
-
-.social-icons img {
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    padding: 0 450px;
-    margin: 50px 50px;
-}
-
-
-footer {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    height: 30px;
-    margin: 0;
-    padding: 20px 0 20px 0;
-    font-weight: 500;
-    background-color: antiquewhite;
+    padding: 20px;
+}  */
+
+/* ---------------- ABOUT ------------------ */
+
+
+
+
+
+/* ---------------- PROJECTS ------------------ */
+
+
+
+
+/* ----------------CONTACT ------------------ */
+
+
+/* MEDIA QUERIES */
+
+/* @media (max-width: 600px) {
+    nav {
+        float: right;
+    }
+    .content-wrapper {
+        display: block;
+
+    }
+    
+    .left-container {
+        display: inline-block;
+        display: flex;
+        flex-grow: 2;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+    
+    .main-header {
+        text-align: center;
+    }
+    
+    .home-bio {
+    
+    }
+    
+    .button-home {
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: lavender;
+        align-content: center;
+        text-align: center;
+        padding: 0 20px;
+        margin: 0 140px;
+        font-size: large;
+        text-decoration: none;
+    }
+    
+    .button-home:hover {
+        background-color: aquamarine;
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    
+    .main-profile-pic {
+        display: flex;
+        flex-grow: 1;
+        /* align-content: center; */
+        /* padding: 20px;
+    }
+    
 }
+
