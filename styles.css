@@ -56,6 +56,7 @@ svg {
 
 svg:hover {
     fill: #f08b2c;
+    transition: 0.2s;
 }
 
 nav {
@@ -73,14 +74,11 @@ nav a {
 }
 
 
-nav a:focus {
-    color: #f0e7e5;
-}
-
 nav a:hover {
     font-weight: 400;
     transform: scale(1.1);
     color: #f08b2c;
+    transition: 0.1s;
 }
 
 .main-wrapper {
@@ -154,13 +152,49 @@ p.intro {
 .home-button:hover {
     background-color:#ff7b00d2;
     transform: scale(1.05);
-    
+    transition: 0.2s;
+    opacity: 0.9;
 }
 
 
 /* ---------ABOUT---------- */
 
+.main-wrapper.about {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: flex-end; */
+}
 
+.sub-header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.about-header {
+    padding: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.profile-pic.about{
+    width: 30%;
+    border-radius: 50%;
+    align-content: center;
+    opacity: 0.9;
+    margin: auto;
+}
+
+.main-text.about {
+    width: 80%;
+}
+
+p.about {
+    margin: auto;
+}
 
 /* ---------PROJECTS--------- */
 .main-wrapper.projects {
@@ -177,6 +211,14 @@ p.intro {
     width: 80%;
 }
 
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
 .project-box {
     display: flex;
     border: 1px solid #bd95715d;
@@ -187,6 +229,11 @@ p.intro {
     justify-content: center;
 }
 
+.project-box:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
 h4 {
     display: flex;
     padding: 0%;
@@ -194,6 +241,11 @@ h4 {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+h4:hover {
+    color: #f08b2c;
+    transition: 0.2s;
 }
 
 /* ---------CONTACT-------- */
@@ -262,6 +314,7 @@ button {
 button:hover {
     background-color: #f08b2c;
     color: #522614;
+    transition: 0.1s;
 }
 
 
@@ -315,7 +368,7 @@ button:hover {
         font-size: 1.1rem;
     }
     
-    /* HOME */
+    /* -----HOME >700----- */
     .main-wrapper {
         display: flex;
         flex-direction: row;
@@ -357,8 +410,89 @@ button:hover {
         justify-content: center;
         text-align: left ;
     }
+    /* --------ABOUT >700------ */
+    .main-wrapper.about {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .sub-header {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+    
+    .about-header {
+        padding: 1rem;
+        margin: 0 0 0.5rem 0;
+    }
+    
+    .profile-pic.about{
+        width: 20%;
+        border-radius: 50%;
+        align-content: center;
+        opacity: 0.9;
+        margin: auto;
+    }
+    
+    .main-text.about {
+        margin: 0.75rem;
+        width: 80%;
+    }
+    
+    p.about {
+        margin: auto;
+    }
 
-    /* CONTACT  */
+    /* ---------PROJECTS >700--------- */
+    .main-wrapper.projects {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .box-wrapper.projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .project-box {
+        display: flex;
+        border: 1px solid #bd95715d;
+        margin: 1rem;
+        height: 15rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    h4 {
+        display: flex;
+        padding: 0%;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h4:hover {
+        color: #f08b2c;
+        transition: 0.2s;
+    }
+
+    /* -------CONTACT >700 ----*/
     .form-container {
         border: 1px solid #bd95715d;
         border-radius: 5px;
@@ -420,7 +554,7 @@ button:hover {
         margin: 0.4rem 0;
         font-size: 1.3rem;
     }
-
+    /*---- HOME >1100------*/
     .main-wrapper {
         display: flex;
         flex-direction: row;
@@ -455,6 +589,7 @@ button:hover {
         padding: 0;
     }
 
+
     h1.home {
         text-align: left;
         font-size: 3rem;
@@ -471,7 +606,91 @@ button:hover {
         text-align: left ;
     }
 
-    /* CONTACT  */
+    /* --------ABOUT >1100------ */
+    .main-wrapper.about {
+        display: flex;
+        flex-direction: row;
+        margin: 2rem 1rem;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+    
+    .sub-header {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        width: 40%;
+    }
+    
+    .about-header {
+        padding: 1rem;
+        margin: 0 0 0.5rem 0;
+    }
+    
+    .profile-pic.about{
+        width: 50%;
+        border-radius: 50%;
+        align-content: center;
+        opacity: 0.9;
+        margin: auto;
+    }
+    
+    .main-text.about {
+        width: 80%;
+        align-content: baseline;
+        justify-content: flex-start;
+        padding-right: 4rem;
+        line-height: 1.3;
+    }
+
+
+    /* -----PROJECTS >1100--------- */ 
+    .main-wrapper.projects {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .box-wrapper.projects {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 90%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .project-box {
+        display: flex;
+        border: 1px solid #bd95715d;
+        margin: 1rem;
+        height: 20rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    h4 {
+        display: flex;
+        padding: 0%;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h4:hover {
+        color: #f08b2c;
+        transition: 0.2s;
+    }
+
+    /*------- CONTACT >1100-----  */
     .form-container {
         border: 1px solid #bd95715d;
         border-radius: 5px;
@@ -479,7 +698,7 @@ button:hover {
         margin: 0.75rem;
         width: 30rem;
     }
-   
+
 
 }
     
