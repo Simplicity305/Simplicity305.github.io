@@ -1,0 +1,1 @@
+This is a work in progress as part of a project for She Codes Plus - a tech program to supercharge women into the tech industry. My portfolio can be found at https://simplicity305.github.io/. 
